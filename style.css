@@ -1,0 +1,138 @@
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 114, 20);
+}
+
+section{
+    padding-left: 70px;
+    margin-top:90px;
+    position: relative;
+    text-align: left;
+}
+
+h1{
+    font-size: 36px;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+input{
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+div{
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+
+img{
+    margin-left: 550px;
+    margin-top: -200px;
+    height: 400px;
+    width: 400px;
+}
+
+@media(max-width: 450px){
+    img{
+        width: 600px;
+        height: 600px;
+        margin-top: 50px;
+        margin-left: -300px;
+    }
+    button{
+        height: 70px;
+        width: 250px;
+        font-size: 22px;
+        border-radius: 15px;
+        border: none;
+    }
+    h1{
+        font-size: 46px;
+    }
+    p{
+        font-size: 24px;
+    }
+
+    input{
+        width: 250px;
+        height: 60px;
+    }
+
+    input::placeholder{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 540px) and (max-width: 1370px){
+    img{
+        height: 550px;
+        width: 550px;
+        margin-top: 50px;
+        margin-left: 63px;
+    }
+    button{
+        border-radius: 15px;
+        height: 90px;
+        width: 250px;
+        font-size: 24px;
+    }
+    input{
+        height: 90px;
+        width: 580px;
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 52px;
+    }
+    p{
+        font-size: 28px;
+    }
+}
+
+@media(orientation: landscape){
+    *{
+        overflow-y: hidden;
+    }
+    section{
+        margin-top: 55px;
+    }
+
+    h1{
+        font-size: 32px;
+        margin-bottom: -15px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+    input{
+        height: 50px;
+        width: 450px;
+    }
+
+    button{
+        height: 80px;
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+        margin-left: 400px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+}
